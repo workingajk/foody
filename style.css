@@ -28,8 +28,15 @@ a {
     font-size: 20vh;
     font-size: 15vw;
     color: white;
+    z-index: 20;
     text-shadow: 0px 0px 3px rgb(0, 0, 0);
     /* text-shadow:  0px 0px 5px 5px #050404; */
+}
+
+@media screen and (max-width:600px) {
+    #b-content h1{
+        top:30px;
+    }
 }
 
 header {
@@ -61,6 +68,10 @@ nav ul {
 
 }
 
+#sm {
+    display: none;
+}
+
 nav ul li {
     margin: 10px 30px;
     transition: 2s;
@@ -74,6 +85,27 @@ header button {
     color: black;
     background-color: white;
     margin: 10px;
+}
+
+@media screen and (max-width:600px) {
+    header {
+        flex-wrap: wrap;
+        height: 100px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #sm {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 20px;
+        transition: 2s;
+    }
 }
 
 #home {
@@ -111,8 +143,6 @@ header button {
 
 .r {
     padding: 30px 30px;
-
-
 }
 
 .stats {
@@ -137,6 +167,28 @@ header button {
     color: white;
 }
 
+@media screen and (max-width:600px) {
+    #home{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .home{
+        height: fit-content;
+        width: 80%;
+    }
+
+    .r{
+        padding: 10px;
+    }
+    .stats{
+        width: 90vw;
+    }
+
+    .h-stats{
+        height: min-content;
+    }
+}
 
 
 
@@ -249,6 +301,17 @@ header button {
     width: 100%;
 }
 
+@media screen and (max-width:600px) {
+    #about{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .about{width: 80%;
+        
+    }
+}
+
 #contact {
     background-color: white;
     text-align: center;
@@ -324,6 +387,28 @@ textarea:focus {
     border: none;
 }
 
+@media screen and (max-width:600px) {
+    .contact-cards {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .r-contact {
+        width: 90%;
+
+    }
+
+    .msg input{
+        width: 100%;
+    }
+    .msg label{
+        width: 150px;
+    }
+    
+}
+
+
 footer {
     /* height: 60vh; */
     display: flex;
@@ -346,4 +431,10 @@ footer {
 
 .f-card {
     margin: 20px 20px;
+}
+
+@media screen and (max-width:600px) {
+    .f-cards{
+        flex-wrap: wrap;
+    }
 }

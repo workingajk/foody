@@ -24,11 +24,11 @@
     <span id="b-content">
         <h1><i class="fa-solid fa-truck-fast"></i>Foody</h1>
     </span>
-    <img id="banner" src="./img/banner.jpg" alt="">
+    <img id="banner" src="./img/banner.jpg" style="filter: blur(8px);" alt="">
 
-    <header>
+    <header style="z-index: 10;">
         <h1><i class="fa-solid fa-truck-fast"></i>Foody</h1>
-        <nav>
+        <nav id="lg">
             <ul>
                 <a href="#home">
                     <li>Home</li>
@@ -45,6 +45,22 @@
             </ul>
         </nav>
         <button>Login</button>
+        <nav id="sm">
+            <ul>
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#menu">
+                    <li>Menu</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
     </header>
 
     <section id="home">
@@ -241,9 +257,9 @@
                 </p><br>
             </div>
 
-            <div>
+            <div >
                 <h2>Why Choose Us?</h2>
-                <ul>
+                <ul style="width: 100%;">
                     <li>
                         Fresh ingredients sourced daily
                     </li>
